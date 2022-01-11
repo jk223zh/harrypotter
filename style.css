@@ -1,0 +1,299 @@
+/*          General           */
+html, body {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    font-family: 'Henny Penny';
+}
+
+body {
+    background-color: rgb(59, 57, 57);
+    
+
+}
+
+header .background {
+    background-image: url(../harrypotterDB/img/header.jpg); 
+    
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.6; 
+    background-position: center;
+    text-align: center;
+    margin-top: -40px; 
+
+}
+
+header h1{
+    font-family: 'Henny Penny', cursive;
+    font-size: 550%; 
+    padding-top: 10%;
+    color: darkgoldenrod;
+    border: darkorange;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  text-align: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+main{
+  padding-top: 5%;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.content{
+
+width: 50%;
+margin: 0 auto;
+gap: 10%;
+margin-bottom: 2%;
+background-color: rgba(255, 255, 255, 0.76);  
+border-radius: 10px;
+}
+
+.content h2{
+text-align: center;
+}
+
+.content h1{
+text-align: center;
+font-size: 14px;
+}
+
+/*        Index.php          */
+
+.cards{
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin: 0 auto;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 20vh;
+    height: 33vh;
+    border: 1px solid #030303;
+    perspective: 1000px; 
+    margin: 5%;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 25vh;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    height: 25vh;
+  }
+
+  .flip-card-back {
+    background-color: rgba(0, 0, 0, 0.637); 
+    color: rgb(255, 255, 255);
+    transform: rotateY(180deg);
+    height: 29vh;
+    padding-top: 20%;
+  }
+
+  .charactersImg {
+      width: 100%;
+      height: 100%;
+  }
+
+  #info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 5%;
+    width: fit-content;
+      background-color: rgb(8, 8, 8);  
+      color: cornsilk;
+      padding: 2%; 
+      border-radius: 10px;
+  }
+  
+
+.containerBar {
+  width: 100%; 
+  background-color: #ddd; 
+  margin-bottom: 10%;
+}
+
+.bar {
+  padding-top: 10px; 
+  padding-bottom: 10px;
+  color: rgb(5, 5, 5); 
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.male {width: 69%; background-color: #04AA6D;} 
+.female {width: 30%; background-color: #2196F3;} 
+.staff {width: 34%; background-color: #ffd104d3;} 
+.student {width: 42%; background-color: #f44336;} 
+.other {width: 24%; background-color: #808080;} 
+
+
+/*            houses.php        */
+
+main.house {
+  font-family: 'Roboto Mono', monospace;
+  display: flex;
+  background-image: url(../harrypotterDB/img/food.jpg);
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.63);
+    background-blend-mode: screen;
+    background-size: cover;
+}
+
+#houseContent{
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.548);
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+    height: 80%; 
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 1%; 
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.houseDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+/*     movies.php       */
+
+#moviesMain{
+  font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: row;
+    background-image: url(../harrypotterDB/img/houses.jpg);
+    background-color: rgba(201, 201, 201, 0.884);
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+
+.containerMovies {
+  background-color: rgba(219, 219, 219, 0.418);
+  display: flex;
+  padding: 1%;
+  width: 300px;
+  height: 400px;
+  margin: 2%;
+  flex-direction: column;
+  font-weight: 800;
+}
+
+.quotes {
+  padding: 2%;
+  width: 450px;
+  background-image: url(../harrypotterDB/img/bubble.png);
+  opacity: 80%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+}
+
+/*     Cast.php        */
+.actorsContent {
+color: #ffffff;
+width: 40%;
+margin: 0 auto;
+margin-bottom: 2%;
+background-color: rgba(255, 255, 255, 0.178);
+padding: 1%;
+border-radius: 10px;
+}
+
+.actorsCard{
+  border: 1px solid #030303;
+  padding: 5%;
+text-align: center;
+}
+
+dl.cast-list {
+  font-family: monospace ;
+  font-size: 20px ;
+  width: 100%;
+}
+
+dl.cast-list div {
+  display: flex ;
+  margin: 5px 0px 5px 0px ;
+}
+
+dl.cast-list dt {
+  display: flex ;
+  flex: 1 1 auto ;
+  margin: 0px 0px 0px 0px ;
+}
+
+dl.cast-list dt:after {
+  border-bottom: 2px dotted #ffffff ;
+  content: "" ;
+  flex: 1 1 auto ;
+  margin: 0px 12px 5px 12px ;
+}
+
+dl.cast-list dd {
+  flex: 0 1 auto ;
+  margin: 0px 0px 0px 0px ;
+}
+
+
+footer{
+  font-family: 'Courier New', Courier, monospace;
+  display:flex; 
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: white; 
+  
+}
